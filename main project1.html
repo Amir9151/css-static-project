@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .header {
+            padding: 30px;
+            background-color: rgb(97, 184, 175);
+            text-align: center;
+        }
+
+        .nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: rgb(243, 139, 120);
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            display: block;
+            padding: 12px 17px;
+            font-size: 19px;
+            color: rgb(18, 12, 109);
+            transition: all ease 0.6s;
+            text-align: center;
+        }
+
+        .nav li a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 4px;
+        }
+
+        .leftcol {
+            float: left;
+            width: 75%;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .img {
+            background-color: gray;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .rightcol {
+            float: left;
+            width: 25%;
+            padding-left: 15px;
+
+        }
+
+        .row::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+
+        .footer {
+            text-align: center;
+            background-color: rgb(171, 187, 175);
+            padding: 20px;
+            height: 170px;
+
+        }
+
+        @media screen and (max-width:900px) {
+
+            .leftcol,
+            .rightcol {
+                width: 100%;
+            }
+        }
+
+
+        @media screen and (max-width:900px) {
+
+            .nav li {
+                float: none;
+
+
+            }
+
+            .nav {
+                width: 50%;
+                margin-left: 50%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>header</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus
+            aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique
+        </p>
+    </div>
+
+    <div>
+        <ul class="nav">
+            <li><a href="#"> home </a></li>
+            <li><a href="#"> contact </a></li>
+            <li><a href="#"> abotus </a></li>
+            <li ><a href="#"> info </a></li>
+        </ul>
+
+    </div>
+
+    <div class="row">
+        <div class="leftcol">
+            <div class="card">
+                <h2>title card</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua</h4>
+                <div class="img" style="height: 200px;">
+                    image
+                </div>
+                <p>some text...........</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris
+                    rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis.
+                    Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin.
+                    Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper
+                    t. </p>
+            </div>
+
+            <div class="card">
+                <h2>title card</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua</h4>
+                <div class="img" style="height: 200px;">
+                    image
+                </div>
+                <p>some text...........</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris
+                    rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis.
+                    Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin.
+                    Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper
+                    t. </p>
+            </div>
+        </div>
+        <div class="rightcol">
+            <div class="card">
+                <h2>about right column</h2>
+                <div class="img" style="height: 100px; ;"> image</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Egestas purus</p>
+            </div>
+            <div class="card">
+                <h2> right column</h2>
+                <div class="img" style="height: 70px;margin-bottom: 15px ;">
+                    <p>image</p>
+                </div>
+                <div class="img" style="height: 70px;margin-bottom: 15px ;">
+                    <p>image</p>
+                </div>
+                <div class="img" style="height: 70px;margin-bottom: 15px ;">
+                    <p>image</p>
+                </div>
+                <div class="img" style="height: 70px;margin-bottom: 15px ;">
+                    <p>image</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <h2> FALLOW ME </h2>
+                <div class="img" style="height: 100px;margin-bottom: 15px ;">
+                    <p>image</p>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div>
+        <h2 class="footer"> footer</h2>
+    </div>
+</body>
+
+</html>
